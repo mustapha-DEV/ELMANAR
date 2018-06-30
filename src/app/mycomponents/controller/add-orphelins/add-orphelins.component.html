@@ -1,0 +1,250 @@
+
+<form class="">
+<div class="row ml-5 mt-4">
+  <div class="col-2 border border-dark rounded"><label>PHOTO</label><img src="#" alt=""></div>
+
+  <div class="col-9 border border-dark rounded">
+  <div class="form-group row">
+    <div class="col-3 form-group row ml-0">
+    <label class="col-12 col-form-label">Nom:</label>
+    <input type="text" class="form-control" [(ngModel)] ="Nom" name="Nom" id="Nom" placeholder="Veuillez saisir Nom">
+    </div>
+    <div class="col-3 col-4 form-group row ml-0">
+    <label class="col-12 col-form-label">2ème Nom:</label>
+    <input type="text" class="form-control" [(ngModel)] ='DeuxNom' name="DeuxNom" id="DeuxNom" placeholder="Veuillez saisir 2ème Nom">
+    </div>
+    <div class="col-3 form-group row ml-0">
+    <label class="col-12 col-form-label">Prénom:</label>
+    <input type="text" class="form-control" [(ngModel)] ='Prenom' name="Prenom" id="Prenom" placeholder="Veuillez saisir Prénom">
+    </div>
+    <div class="col-3 form-group row ml-0">
+    <label class="col-12 col-form-label">Date naissance:</label>
+    <input type="text" class="form-control" [(ngModel)] ='DateNais' name="DateNais" id="DateNais" placeholder="Veuillez saisir Date naissance">
+    </div>
+    <div class="col-3 form-group row ml-0">
+    <label class="col-12 col-form-label">Région:</label>
+    <input type="text" class="form-control" [(ngModel)] ='region' name="region" id="region" placeholder="Veuillez saisir Région">
+    </div>
+    <fieldset class="form-group col-3 row ml-0">
+    <legend class="col-form-legend col-sm-12">Sexe</legend>
+    <div class="col-12">
+    <div class="form-check form-check-inline">
+    <label class="form-check-label">
+    <input class="form-check-input" type="radio" [(ngModel)] ='sexeRadios' name="sexeRadios"  id="sexe1" [value]="true" checked>
+    Male
+    </label>
+    </div>
+    <div class="form-check form-check-inline">
+    <label class="form-check-label">
+    <input class="form-check-input" type="radio" [(ngModel)] ='sexeRadios' name="sexeRadios" id="sexe2" [value]="false" checked>
+    Famle
+    </label>
+    </div>
+    </div>
+    </fieldset>
+    <div class="col-12 form-group row ml-0">
+    <label class="col-12 col-form-label">Adresse:</label>
+    <input type="text" class="form-control" [(ngModel)] ='Adresse' name="Adresse" id="Adresse" placeholder="Veuillez saisir L'adresse">
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="row ml-5 mt-4">
+    <div class="col-11 border border-dark rounded">
+      <div class="form-group row pl-10">
+              <div class="col-3 form-group row ml-0">
+              <label class="col-10 col-form-label">Le décé:</label>
+              <select class="custom-select mb-2 mr-sm-2 mb-sm-0" [(ngModel)] ='Deces' name='Deces' id="Deces">
+                  <option selected>Choisi...</option>
+                  <option value="1">Le pere</option>
+                  <option value="2">Les deux parents</option>
+                </select>
+              </div>
+              <div class="col-3 form-group row ml-0">
+              <label class="col-10 col-form-label">Date décès:</label>
+              <input type="text" class="form-control" [(ngModel)] ='DateDecesPere' name="DateDecesPere" id="DateDecesPere" placeholder="Veuillez saisir Date décès du pére">
+              </div>
+              <div class="col-3 form-group row ml-0">
+              <label class="col-10 col-form-label">Cause décès:</label>
+              <input type="text" class="form-control" [(ngModel)] ='CauseDecesPere' name="CauseDecesPere" id="CauseDecesPere" placeholder="Veuillez saisir Cause décès du pére">
+              </div>
+              <div class="col-3 form-group row ml-0">
+              <label class="col-10 col-form-label">Nom mére:</label>
+              <input type="text" class="form-control" [(ngModel)] ='NomMere' name="NomMere" id="NomMere" placeholder="Veuillez saisir Nom mére">
+              </div>
+              <div class="col-3 form-group row ml-0">
+              <label class="col-10 col-form-label">Sa profession:</label>
+              <input type="text" class="form-control" [(ngModel)] ='PMere' name="PMere" id="PMere" placeholder="Veuillez saisir Sa profession">
+              </div>
+              <div class="col-3 form-group row ml-0">
+              <label class="col-10 col-form-label">Date décès mére:</label>
+              <input type="text" class="form-control" [(ngModel)] ='DateDecesMere' name="DateDecesMere" id="DateDecesMere" placeholder="Veuillez saisir Date décès mére">
+              </div>
+
+              <div class="col-3 form-group row ml-0">
+                  <label class="col-10 col-form-label">Nbr frères:</label>
+                  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" [(ngModel)] ='NbrFreres' name="NbrFreres" id="NbrFreres" >
+                      <option selected>Choisi...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </div>
+                <div class="col-3 form-group row ml-0">
+                  <label class="col-10 col-form-label">Nbr sœurs:</label>
+                  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" [(ngModel)] ='NbrSoeurs' name="NbrSoeurs"  id="NbrSœurs">
+                      <option selected>Choisi...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </div>
+                  <div class="col-3 form-group row ml-0">
+                  <label class="col-10 col-form-label">Range orphelin:</label>
+                  <select class="custom-select mb-2 mr-sm-2 mb-sm-0"  [(ngModel)] ='rangeOrphelin' name="rangeOrphelin" id="rangeOrphelin">
+                      <option selected>Choisi...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </div>
+                  <div class="col-3 form-group row ml-0">
+                  <label class="col-10 col-form-label">Nbr famille:</label>
+                  <select class="custom-select mb-12 mr-sm-12 mb-sm-0" [(ngModel)] ='NbrFamille' name="NbrFamille" id="NbrFamille">
+                      <option selected>Choisi...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                  </select>
+                  </div>
+              <div class="col-3 form-group row ml-0">
+                  <label class="col-10 col-form-label">Nom tuteur:</label>
+                  <input type="text" class="form-control" [(ngModel)] ='NomTuteur' name="NomTuteur" id="NomTuteur" placeholder="Veuillez saisir Nom tuteur">
+              </div>
+              <div class="col-3 form-group row ml-0">
+                  <label class="col-10 col-form-label">CIN tutuer:</label>
+                  <input type="text" class="form-control" [(ngModel)] ='CinTuteur' name="CinTuteur" id="CinTuteur" placeholder="Veuillez saisir CIN tutuer">
+              </div>
+              <div class="col-3 form-group row ml-0">
+                  <label class="col-10 col-form-label">Profession tuteur:</label>
+                  <input type="text" class="form-control" [(ngModel)] ='PTuteur' name="PTuteur" id="PTuteur" placeholder="Veuillez saisir profession tuteur">
+              </div>
+              <div class="col-3 form-group row ml-0">
+                  <label class="col-10 col-form-label">Relation tuteur :</label>
+                  <input type="text" class="form-control" [(ngModel)] ='RTuteur' name="RTuteur" id="RTuteur" placeholder="Veuillez saisir Relation tuteur">
+              </div>
+                      
+            </div>
+</div>
+</div>
+
+<div class="row ml-5 mt-4 ">
+    <div class="col-11 border border-dark rounded">
+        <div class="form-group row pl-10">
+        <div class="col-4 form-group row ml-0">
+            <label class="col-10 col-form-label">Cycle classe:</label>
+            <input type="text" class="form-control" [(ngModel)] ='CycleClasse' name="CycleClasse" id="CycleClasse" placeholder="Veuillez saisir Cycle classe">
+        </div>
+
+        <div class="col-4 form-group row ml-0">
+            <label class="col-10 col-form-label">Niveau scolaire:</label>
+            <input type="text" class="form-control" [(ngModel)] ='NiveauScolaire' name="NiveauScolaire" id="NiveauScolaire" placeholder="Veuillez saisir Niveau scolaire">
+        </div>
+
+        <div class="col-4 form-group row ml-0">
+            <label class="col-10 col-form-label">L’année scolaire:</label>
+            <input type="text" class="form-control" [(ngModel)] ='AnneeScolaire' name="AnneeScolaire" id="AnneeScolaire" placeholder="Veuillez saisir L’année scolaire">
+        </div>
+
+        <div class="col-4 form-group row ml-0">
+            <label class="col-10 col-form-label">Notes:</label>
+            <input type="text" class="form-control" [(ngModel)] ='Notes' name="Notes" id="Notes" placeholder="Veuillez saisir Notes">
+        </div>
+      
+        <div class="col-4 form-group row ml-0">
+            <label class="col-10 col-form-label">Nom de l’école:</label>
+            <input type="text" class="form-control" [(ngModel)] ='NomEcole' name="NomEcole" id="NomEcole" placeholder="Veuillez saisir  Nom de l’école">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row ml-5 mt-4">
+      <div class="col-11 border border-dark rounded">
+          <div class="form-group row pl-10">
+
+              <div class="col-4 form-group row ml-0">
+                  <label class="col-10 col-form-label">Type de maladie:</label>
+                  <input type="text" class="form-control" [(ngModel)] ='TypeMaladie' name="TypeMaladie" id="TypeMaladie" placeholder="Veuillez saisir Type de maladie">
+              </div>
+
+              <div class="col-4 form-group row ml-0">
+                  <label class="col-10 col-form-label">Niveau de maladie:</label>
+                  <input type="text" class="form-control" [(ngModel)] ='NiveauMaladie' name="NiveauMaladie" id="NiveauMaladie" placeholder="Veuillez saisir Niveau de maladie">
+              </div>
+              
+              <div class="col-4 form-group row ml-0">
+                  <label class="col-10 col-form-label">Traitement:</label>
+                  <input type="text" class="form-control" [(ngModel)] ='Traitement' name="Traitement" id="Traitement" placeholder="Veuillez saisir Traitement">
+              </div>
+              
+              <div class="col-4 form-group row ml-0">
+                  <label class="col-10 col-form-label">Cause de malade:</label>
+                  <input type="text" class="form-control" [(ngModel)] ='CauseMalade' name="CauseMalade"  id="CauseMalade" placeholder="Veuillez saisir Cause de malade">
+              </div>
+              <div class="col-4 form-group row ml-0">
+              <label class="col-10 col-form-label">Charges de traitement:</label>
+              <input type="text" class="form-control" [(ngModel)] ='ChargesTraitement' name="ChargesTraitement" id="ChargesTraitement" placeholder="Veuillez saisir Charges de traitement">
+          </div>
+
+        </div>
+     </div>
+  </div>
+
+  <div class="row ml-5 mt-4 mb-4">
+      <div class="col-11 border border-dark rounded">
+          <div class="form-group row pl-10">
+
+              <div class="col-6 form-group row ml-0">
+                  <label class="col-10 col-form-label">Propriété de foyer</label>
+                  <input type="text" class="form-control" [(ngModel)] ='ProprieteFoyer' name="ProprieteFoyer" id="ProprieteFoyer" placeholder="Veuillez saisir Propriété de foyer">
+              </div>
+
+              <div class="col-6 form-group row ml-0">
+                  <label class="col-10 col-form-label">Nature de foyer:</label>
+                  <input type="text" class="form-control" [(ngModel)] ='NatureFoyer' name="NatureFoyer" id="NatureFoyer" placeholder="Veuillez saisir Nature de foyer">
+              </div>
+
+              <div class="form-group col-4 col-sm-12 col-md-12 row ml-0">
+                  <label for="exampleTextarea">L’état de foyer:</label>
+                  <textarea class="form-control" [(ngModel)] ='EtatFoyer' name="EtatFoyer" id="EtatFoyer" rows="3"></textarea>
+                </div>
+
+        </div>
+     </div>
+  </div>
+
+</form>
